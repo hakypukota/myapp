@@ -1,0 +1,55 @@
+h1,h2,h3,h4,h5,h6 {
+	text-align:center;
+}
+body {
+	font-family:Arial;
+	background-color:#e1e3e8;
+}
+#wrapper {
+	width:920px;
+	margin:0 auto;
+	display:block;
+}
+#ms1, #ms2, #ms3, #ms4 {
+	background-color:#bacfef;
+	width:48%;
+	height:400px;
+	float:left;
+	border:2px solid black;
+	padding-top:10px;
+	padding-right:3px;
+	Padding-bottom:10px;
+	padding-left:10px;
+}
+#ms1 p img {
+	display:block;
+	margin:0 auto;
+}
+#ms3 {
+	float:left;
+}
+header ul {
+	list-style:none;
+	text-align:center;
+}
+header ul li {
+		display:inline;
+}
+footer h1 {
+	text-align:center;
+}
+input {
+	float:right;
+}
+label {
+	float:left;
+}
+button{
+	border:2px solid red;
+	font-size:40px;
+	float:right;
+}
+button :hover {
+	border:2px solid blue;
+	background-color:white;
+}

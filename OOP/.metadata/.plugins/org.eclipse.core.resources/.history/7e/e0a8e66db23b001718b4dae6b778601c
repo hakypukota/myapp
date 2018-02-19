@@ -1,0 +1,32 @@
+package tca;
+
+public class Blizzard extends Storm{
+
+	public Blizzard(String nameIn, int windSpeedIn, double temperatureIn) {
+		super(nameIn, windSpeedIn, temperatureIn);
+		// TODO Auto-generated constructor stub
+	}
+	public String getClassification(){
+		if (getWindSpeed()<=44 && getWindSpeed()>=35){
+			return "Weak";
+		}
+		else if(getWindSpeed()>=45 && getTemperature()<=12{
+			
+		}
+		else {
+			return "Unclassified";
+		}
+	}
+	public String getAdvice(){
+		if (getClassification()=="Weak"){
+			return "Find safe room/shelter, shield yourself from debris";
+		}
+		else if(getClassification()=="Strong" || getClassification()=="Viloent"){
+			return "Find underground shelter, crouch near to the floor covering your head with your hands";
+		}
+		else {
+			return "There is no need to panic";
+		}
+	}
+	
+}

@@ -1,0 +1,9 @@
+package tca;
+
+public class AdviceCentre {
+
+	public AdviceCentre() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

@@ -1,0 +1,18 @@
+package tca;
+
+public class AdviceCentre {
+
+	Storm[] stormArray = new Storm[10];
+	
+	public boolean addStorm(Storm stormIn){
+		for (int i=0;i<10;i++){
+			if (stormArray[i]==null){
+				stormArray[i]=stormIn;
+				return true;
+			}
+		}
+		return false;
+	}
+	
+
+}

@@ -1,0 +1,9 @@
+package tca;
+
+public class AdviceCentre {
+
+	Storm[] stormArray = new Storm[10];
+	
+	
+
+}

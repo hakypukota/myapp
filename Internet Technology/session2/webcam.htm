@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Webcam</title>
+        <meta charset="utf-8">
+        <meta name="description" content="webcam mosaic">
+        <script>
+          var videos = document.getElementsByClassName('video');
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia)  {
+
+        navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
+          
+            for (var x = 0; x < videos.length; x ++) {   
+                videos[x].src = window.URL.createObjectURL(stream);
+                videos[x].play();
+          }
+        });
+}
+  
+        </script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>      
+            </tr>
+            <tr>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>      
+            </tr>
+            <tr>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>      
+            </tr>
+            <tr>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>
+                <th><video class="video" width="200" height="200" autoplay></video></th>      
+            </tr>
+        </table>
+            
+    </body>
+
+
+
+
+
+
+
+
+
+</html>

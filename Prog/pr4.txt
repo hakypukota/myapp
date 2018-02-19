@@ -1,0 +1,108 @@
+#asking height and weight as two floats
+print("Enter your height in metres")
+userHeight = float(input())
+print("enter your weight in kilos")
+userWeight = float(input())
+
+#calculating bmi
+bmi = userWeight/(userHeight**2)
+print("ur bmi is", bmi)
+#if bmi is less than 18.5 it  will print the message below
+if (bmi<18.5): print("U are underweight")
+
+#if bmi is more than 18.5 and less than 24.9 it will print that the user is ok
+elif((bmi>=18.5) and (bmi<25)):
+	print("ur ok")
+#if bmi is more than 25 and less than 29.29 it will print that ur overweight
+elif((bmi>=25) and (bmi<30)):
+	print("ur overweight")
+# if bmi has any other values it will print that:
+else :
+	print("ur really fat")
+
+
+
+#introducing the program to a user
+print("this program will tell you is the triangle is valid")
+
+#reading the sides
+print("type the first side of the triangle in cm")
+sideA = float(input())
+print("type the second side of the triangle in cm")
+sideB = float(input())
+print("type the third side of the triangle in cm")
+sideC = float(input())
+
+#deciding if the sides fit in the 1-200 range
+if (sideA<200 and sideA>1 and sideB<200 and sideB>1 and sideC>1 and sideC<200):
+	
+	#deciding if the triangle is valid
+	if (sideA+sideB>sideC) and (sideA+sideC>sideB) and (sideB+sideC>sideA):
+		print("the triangle is valid")
+	else:
+		print("your triangle is invalid")
+else:
+	print("unacceptable value of the side")
+
+
+#introducing the program to a user
+print("this program will tell you is the triangle is valid")
+
+#reading the sides
+print("type the first side of the triangle in cm")
+sideA = float(input())
+print("type the second side of the triangle in cm")
+sideB = float(input())
+print("type the third side of the triangle in cm")
+sideC = float(input())
+
+#deciding if the sides fit in the 1-200 range
+if (sideA<200 and sideA>1 and sideB<200 and sideB>1 and sideC>1 and sideC<200):
+	
+	#deciding if the triangle is valid
+	if (sideA+sideB>sideC) and (sideA+sideC>sideB) and (sideB+sideC>sideA):
+		print("the triangle is valid")
+		if (sideA==sideB) and (sideB==sideC): print("it is equaleral")
+		elif ((sideA==sideB) and (sideB!=sideC)) or ((sideA==sideC) and sideC!=sideB) or ((sideB+sideC) and (sideC!=sideA))
+	else:
+		print("your triangle is invalid")
+else:
+	print("unacceptable value of the side")
+
+
+
+
+
+
+
+
+
+
+
+
+----------------
+FOR
+print("enter your name")
+userName = str(input())
+i = int(0)
+
+for i in range(len(userName)):
+  print(userName)
+
+-----
+WHILE
+print("enter your number")
+
+numberFac = int(input())
+
+i = int(1)
+fac = int(1)
+
+while (i<=numberFac):
+  
+  fac = fac * i
+  i = i+1
+  
+print(fac)
+
+  

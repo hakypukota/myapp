@@ -1,0 +1,7 @@
+package tca;
+
+public class Tornado extends Storm{
+	public String getClassification(){
+		
+	}
+}

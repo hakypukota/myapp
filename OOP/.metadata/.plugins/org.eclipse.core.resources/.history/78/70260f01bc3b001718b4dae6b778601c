@@ -1,0 +1,206 @@
+package tca;
+
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+public class Gui extends JFrame implements ActionListener{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private GridBagConstraints constraints;
+	private AdviceCentre AdvCentre;
+	private Storm storm;
+	
+	private JLabel lblStormName;
+	private JLabel lblWindSpeed;
+	private JLabel lblTemperature;
+	private JLabel lblType;
+	private JLabel lblStatus;
+	
+	private JTextField txt_StormName;
+	private JTextField txt_WindSpeed;
+	private JTextField txt_Temperature;
+	private JTextField txt_Type;
+	
+	private JButton btnAdd;
+	private JButton btnRem;
+	private JButton btnView;
+	
+	public Gui() {
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new GridBagLayout());
+		constraints = new GridBagConstraints();
+		
+		initComponents();
+		
+		layoutComponents();
+		
+	}
+	public void initComponents() {
+		lblStormName = new JLabel("Storm name:");
+		lblWindSpeed = new JLabel("Wind Speed(mph):");
+		lblTemperature = new JLabel ("Temperature:");
+		lblType = new JLabel("Type:");
+		lblStatus = new JLabel("Advice Centre");
+		
+		txt_StormName = new JTextField();
+		txt_WindSpeed = new JTextField();
+		txt_Temperature = new JTextField();
+		txt_Type = new JTextField();
+		
+		btnAdd = new JButton("Add Storm");
+		btnAdd.addActionListener(this);
+		btnRem = new JButton("Remove Storm");
+		btnRem.addActionListener(this);
+		btnView = new JButton("View Storm");
+		btnView.addActionListener(this);
+		
+	}
+	public void layoutComponents() {
+		constraints.gridy=0;
+		constraints.gridx=0;
+				
+		this.add(lblStormName, constraints);
+		
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=0;
+		constraints.gridx=1;
+		
+		this.add(txt_StormName, constraints);
+		
+		constraints.fill = GridBagConstraints.NONE;
+		constraints.gridy=1;
+		constraints.gridx=0;
+		
+		this.add(lblWindSpeed,constraints);
+
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=1;
+		constraints.gridx=1;
+		
+		this.add(txt_WindSpeed,constraints);
+		
+		constraints.fill = GridBagConstraints.NONE;
+		constraints.gridy=2;
+		constraints.gridx=0;
+		
+		this.add(lblTemperature,constraints);
+		
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=2;
+		constraints.gridx=1;
+		
+		this.add(txt_Temperature,constraints);
+		
+		constraints.fill = GridBagConstraints.NONE;
+		constraints.gridy=3;
+		constraints.gridx=0;
+		
+		this.add(lblType,constraints);
+		
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=3;
+		constraints.gridx=1;
+		
+		this.add(txt_Type,constraints);
+		
+		constraints.gridy=4;
+		constraints.gridx=0;
+		this.add(btnView,constraints);
+		
+		constraints.gridy=4;
+		constraints.gridx=1;
+		this.add(btnAdd,constraints);
+		
+		constraints.gridy=0;
+		constraints.gridx=3;
+		this.add(btnRem,constraints);
+		
+		constraints.gridy=5;
+		constraints.gridx=1;
+		this.add(lblStatus,constraints);
+	}
+	public void actionPerformed(ActionEvent ev) {
+		if (ev.getSource().equals(btnAdd)){
+
+			String name = txt_StormName.getText();
+			int windSpeed = Integer.parseInt(txt_WindSpeed.getText());
+			int temperature = Integer.parseInt(txt_Temperature.getText());
+			String type = txt_Type.getText();
+			if (type=="Tornado"){
+				Tornado s1 = new Tornado(name,windSpeed,temperature);
+				if(AdvCentre.addStorm(s1)){
+					JOptionPane.showMessageDialog(null, "Storm added");
+					txt_StormName.setText("");
+					txt_WindSpeed.setText("");
+					txt_Temperature.setText("");
+					txt_Type.setText("");					
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "AdvCentre[] is full or invalid name");
+				}
+			}
+			else if(type=="Hurricane"){
+				Hurricane s1 = new Hurricane(name,windSpeed,temperature);
+				if(AdvCentre.addStorm(s1)){
+					JOptionPane.showMessageDialog(null, "Storm added");
+					txt_StormName.setText("");
+					txt_WindSpeed.setText("");
+					txt_Temperature.setText("");
+					txt_Type.setText("");					
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "AdvCentre[] is full or invalid name");
+				}
+			}
+			else if(type=="Blizzard"){
+				Blizzard s1 = new Blizzard(name,windSpeed,temperature);
+				if(AdvCentre.addStorm(s1)){
+					JOptionPane.showMessageDialog(null, "Storm added");
+					txt_StormName.setText("");
+					txt_WindSpeed.setText("");
+					txt_Temperature.setText("");
+					txt_Type.setText("");					
+				}
+				else {
+					JOptionPane.showMessageDialog(null, "AdvCentre[] is full or invalid name");
+				}
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "Wrong Storm type(has to be Tornado/Hurricane/Blizzard");
+			}
+		}
+		else if(ev.getSource().equals(btnRem)){
+			String name = txt_StormName.getText();
+			if (AdvCentre.remStorm(name)){
+				JOptionPane.showMessageDialog(null, "Storm removed");
+				txt_StormName.setText("");
+				txt_WindSpeed.setText("");
+				txt_Temperature.setText("");
+				txt_Type.setText("");	
+			}
+			else{
+				JOptionPane.showMessageDialog(null, "Error. Wrong name");
+			}
+		}
+		
+	}
+	public static void main(String[] args)
+	{
+		Gui gui = new Gui();
+		gui.pack();
+		gui.setVisible(true);
+	}
+	
+}

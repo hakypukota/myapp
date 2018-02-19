@@ -1,0 +1,9 @@
+package tca;
+
+public class Blizzard {
+
+	public Blizzard() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

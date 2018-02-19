@@ -1,0 +1,36 @@
+body {
+	background-color:#F6DDCC;
+	font-family:calibri,serif;
+	font-size:19px;
+	color:#1f3d4d;	
+}
+#wrapper {
+	width: 820px;
+}
+#header {
+	opacity:0.8;
+	width:810px;
+	border:2px solid black;
+	text-align:center;
+	background-image:url("../img/headerimg.jpg");
+	background-repeat: repeat-x;
+}
+#section {
+	text-align:center;
+}
+.grey {
+	background-color:rgba(178, 186, 187, 0.9);
+}
+.white {
+	background-color:rgba(215, 219, 221, 0.9);
+}
+.grey :hover{
+	background-color: rgba(112, 123, 124,1);
+}
+.white :hover {
+	background-color:rgba(166, 172, 175,1);
+}
+table {
+	border: 5px solid #5D6D7E ;
+	background-image:url("../img/tableimg.jpg");
+}

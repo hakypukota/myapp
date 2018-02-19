@@ -1,0 +1,46 @@
+body {
+	background-color:#F6DDCC;
+	font-family:calibri,serif;
+	font-size:19px;
+	color:#1f3d4d;	
+}
+#wrapper {
+	width:70%;
+	background-color:white;
+	Display:block;
+	margin:0 auto;	
+}
+#header {
+	float:left;
+	width:100%;
+	display:block;
+	opacity:0.8;
+	text-align:center;
+	background-image:url("../img/headerimg.jpg");
+	background-repeat: repeat;
+	border:2px solid black;
+}
+#section {
+	width:74.5%;
+	display:block;
+	text-align:center;
+	float:left;
+	border:2px solid black;
+}
+
+table {
+	border: 5px solid #5D6D7E ;
+	background-image:url("../img/tableimg.jpg");
+}
+.page_img {
+	width:80%;
+	display: block;
+    margin: 0 auto;  
+}
+#menu {
+	display:block;
+	width:23.5%;
+	height:100%;
+	float:right;
+	background-color:blue;
+}

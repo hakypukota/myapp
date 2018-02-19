@@ -1,0 +1,9 @@
+package tca;
+
+public class Hurricane {
+
+	public Hurricane() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

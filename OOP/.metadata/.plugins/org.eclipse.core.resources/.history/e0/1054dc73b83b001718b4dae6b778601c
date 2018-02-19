@@ -1,0 +1,161 @@
+import java.awt.GridBagConstraints;
+import java.awt.GridBagLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JButton;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+public class Gui extends JFrame implements ActionListener{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private GridBagConstraints constraints;
+	private AdviceCentre AdvCentre;
+	private Storm storm;
+	
+	private JLabel lblStormName;
+	private JLabel lblWindSpeed;
+	private JLabel lblTemperature;
+	private JLabel lblType;
+	private JLabel lblStatus;
+	
+	private JTextField txt_StormName;
+	private JTextField txt_WindSpeed;
+	private JTextField txt_Temperature;
+	private JTextField txt_Type;
+	
+	private JButton btnAdd;
+	private JButton btnRem;
+	private JButton btnView;
+	
+	public Gui() {
+		
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		this.setLayout(new GridBagLayout());
+		constraints = new GridBagConstraints();
+		
+		initComponents();
+		
+		layoutComponents();
+		
+	}
+	public void initComponents() {
+		lblStormName = new JLabel("Storm name:");
+		lblWindSpeed = new JLabel("Wind Speed(mph):");
+		lblTemperature = new JLabel ("Temperature:");
+		lblType = new JLabel("Type:");
+		lblStatus = new JLabel("Welcome!");
+		
+		txt_StormName = new JTextField();
+		txt_WindSpeed = new JTextField();
+		txt_Temperature = new JTextField();
+		txt_Type = new JTextField();
+		
+		btnAdd = new JButton("Add Storm");
+		btnAdd.addActionListener(this);
+		btnRem = new JButton("Remove Storm");
+		btnRem.addActionListener(this);
+		btnView = new JButton("View Storm");
+		btnView.addActionListener(this);
+		
+	}
+	public void layoutComponents() {
+		constraints.gridy=0;
+		constraints.gridx=0;
+				
+		this.add(lblStormName, constraints);
+		
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=0;
+		constraints.gridx=1;
+		
+		this.add(txt_StormName, constraints);
+		
+		constraints.fill = GridBagConstraints.NONE;
+		constraints.gridy=1;
+		constraints.gridx=0;
+		
+		this.add(lblWindSpeed,constraints);
+
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=1;
+		constraints.gridx=1;
+		
+		this.add(txt_WindSpeed,constraints);
+		
+		constraints.fill = GridBagConstraints.NONE;
+		constraints.gridy=2;
+		constraints.gridx=0;
+		
+		this.add(lblTemperature,constraints);
+		
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		constraints.gridy=2;
+		constraints.gridx=1;
+		
+		this.add(txt_Temperature,constraints);
+		
+		constraints.fill = GridBagConstraints.NONE;
+		constraints.gridy=3;
+		constraints.gridx=0;
+		constraints.gridwidth=2;
+		
+		this.add(lblType,constraints);
+		
+		constraints.fill = GridBagConstraints.HORIZONTAL;
+		
+		
+		this.add(lblStatus,constraints);
+		
+		constraints.gridwidth=1;
+		constraints.gridy=4;
+		constraints.gridx=0;
+		
+		this.add(btnAdd,constraints);
+		
+		constraints.gridy=4;
+		constraints.gridx=1;
+		
+		this.add(btnRem,constraints);
+	}
+	public void actionPerformed(ActionEvent ev) {
+		
+		if (ev.getSource().equals(btnAdd)){
+
+			int RegNo = Integer.parseInt(txt_RegNo.getText());
+			String Owner = txt_Owner.getText();
+			String Model = txt_Model.getText();
+			car.setModel(Model);
+			car.setNumber(RegNo);
+			car.setOwnersName(Owner);
+			if(carpark.addCar(car)){
+				JOptionPane.showMessageDialog(null, "Car has been added");
+				txt_Owner.setText("");
+				txt_RegNo.setText("");
+				txt_Model.setText("");
+				String numSpaces = "Carpark has "+ carpark.showInfo() +" empty spaces";
+				lblStatus.setText(numSpaces);
+				
+			}
+			else {
+				JOptionPane.showMessageDialog(null, "The carpark is full or invalid number");
+			}
+		}
+		else if(ev.getSource().equals(btnRem)){
+			
+		}
+	}
+	public static void main(String[] args)
+	{
+		Gui gui = new Gui();
+		gui.pack();
+		gui.setVisible(true);
+	}
+	
+}
