@@ -32,3 +32,8 @@ git add all]
 git add all
 git add .
 git commit
+cd c/users/3krivk20/documents/MyApplication2
+git add origin
+git add 
+git add .
+git commit

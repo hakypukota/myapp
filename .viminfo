@@ -23,33 +23,49 @@
 # Registers:
 ""-	CHAR	0
 	#
-|3,1,36,0,1,0,1518438884,"#"
+|3,1,36,0,1,0,1518439428,"#"
 
 # File marks:
-'0  19  36  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
-|4,48,19,36,1518438964,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
-'1  15  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
-|4,49,15,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
-'2  16  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
-|4,50,16,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
-'3  16  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
-|4,51,16,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+'0  334  17  ~/.git/COMMIT_EDITMSG
+|4,48,334,17,1518439521,"~/.git/COMMIT_EDITMSG"
+'1  19  36  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,49,19,36,1518438964,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+'2  15  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,50,15,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+'3  16  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,51,16,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 '4  16  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,52,16,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
-'5  17  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
-|4,53,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+'5  16  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,53,16,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 '6  17  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,54,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+'7  17  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,55,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 
 # Jumplist (newest first):
+-'  334  17  ~/.git/COMMIT_EDITMSG
+|4,39,334,17,1518439521,"~/.git/COMMIT_EDITMSG"
+-'  1  0  ~/.git/COMMIT_EDITMSG
+|4,39,1,0,1518439264,"~/.git/COMMIT_EDITMSG"
 -'  19  36  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,19,36,1518438964,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  19  36  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,19,36,1518438964,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  1  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,1,0,1518438831,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  1  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,1,0,1518438831,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  15  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,15,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  16  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,16,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  15  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,15,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  16  27  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,16,27,1518438140,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  1  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,1,0,1518437988,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  1  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,1,0,1518437988,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  16  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
@@ -58,10 +74,26 @@
 |4,39,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  17  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  16  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,16,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  17  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  17  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,17,0,1518437817,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
+-'  1  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
+|4,39,1,0,1518437660,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 -'  1  0  /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 |4,39,1,0,1518437660,"/c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/COMMIT_EDITMSG
+	*	1518439428	0
+	"	334	17
+	.	576	8
+	+	576	9
+	+	577	0
+	+	576	8
 
 > /c/Users/3krivk20/documents/MyApplication2/.git/COMMIT_EDITMSG
 	*	1518438884	0
